@@ -1,9 +1,10 @@
 {
   "name": "vite-deploy-workflow",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/main.js",
+  "module": "dist/main.js",
   "types": "dist/main.d.ts",
   "files": [
     "dist"

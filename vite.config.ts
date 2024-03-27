@@ -11,6 +11,8 @@ export default defineConfig({
   plugins: [react(), libInjectCss(), dts({ include: ["lib"] })],
   build: {
     copyPublicDir: false,
+    sourcemap: true,
+    emptyOutDir: true,
     lib: {
       entry: resolve(__dirname, "lib/main.ts"),
       formats: ["es"],
@@ -30,6 +32,7 @@ export default defineConfig({
       ),
       // Define globals if necessary (useful for UMD/IIFE bundles)
       output: {
+        format: "es",
         assetFileNames: "assets/[name][extname]",
         entryFileNames: "[name].js",
         globals: {

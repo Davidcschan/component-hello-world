@@ -10,3 +10,4 @@ function r(s) {
 export {
   r as Label
 };
+//# sourceMappingURL=index.js.map
